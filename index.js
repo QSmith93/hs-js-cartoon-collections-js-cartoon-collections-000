@@ -8,6 +8,8 @@ function dwarfRollCall(dwarves) {
 }
 
 function summonCaptainPlanet(planeteerCalls){
+planeteerCalls = [];
+  
 }
 
 function longPlaneteerCalls(words) {
