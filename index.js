@@ -5,6 +5,7 @@ function dwarfRollCall(dwarves) {
   }
   return  call.join(" ")
 }
+
 // I don't know why my result is being rejected. I have the exact result expected.
 
 function summonCaptainPlanet(planeteerCalls) {
@@ -24,6 +25,7 @@ function longPlaneteerCalls(words) {
     }
   }
 }
+
 // Having trouble best understanding loop conditionals.
 // I know that my function is assessing the length of the first element of the index, but I don't believe that it is continuing to assess down the line. How can I change my FOR loop to properly search this? 
 // Or is my function so far from what was expected? Am I supposed to set up a function to check shortCalls vs longCalls?
@@ -38,4 +40,5 @@ var cheese = ["cheddar", "gouda", "camembert"];
   return 'no cheese!'
   }
 }
+
 // "no cheese!" works just fine. Need to find a way to have a foods[i] match one of the cheeses. Could set === "cheddar", but that's cheap.
