@@ -20,10 +20,10 @@ function summonCaptainPlanet(planeteerCalls) {
   return planeteerCalls
 }
 
-words = ["wind", "fire", "water", "heart"]
-i = 0
+words = ["earth", "wind", "fire", "water", "heart"]
+var i = 0
 function longPlaneteerCalls(words) {
-  while (i < words.length) {
+  for (i = 0; i < words.length; i++) {
     var n = words[i].length
     if (n > 4) {
       return "true"
@@ -33,18 +33,18 @@ function longPlaneteerCalls(words) {
   }
 }
 
+
 // I know that my function is assessing the length of the first element of the index, but I don't believe that it is continuing to assess down the line. How can I change my FOR loop to properly search this? 
 // Or is my function far from what was expected? Am I supposed to set up a function to check shortCalls vs longCalls?
 
 function findTheCheese(foods) {
 let i = 0
-foods = [];
 var cheese = ["cheddar", "gouda", "camembert"];
-  if (foods[i] === cheese) {
+  if (foods[i] === "cheddar" || foods[i] === "gouda" || foods[i] === "camembert") {
     return "cheddar"
   } else if (foods != cheese) {
   return 'no cheese!'
   }
 }
 
-// "no cheese!" works just fine. Need to find a way to have a foods[i] match one of the cheeses. Could set === "cheddar", but that's cheap.
+// "no cheese!" works just fine. Need to find a way to have a foods[i] match one of the cheeses. Could set === "cheddar", but that's cheap. find()?
