@@ -22,9 +22,9 @@ function longPlaneteerCalls(words) {
   for (var i = 0; i < words.length; i++) {
     var n = words[i].length
     if (n > 4) {
-      return "True"
+      return "true"
     } else {
-    return "False"
+    return "false"
     }
   }
 }
