@@ -29,5 +29,13 @@ function longPlaneteerCalls(words) {
   }
 }
 
-function findTheCheese (foods) {
+function findTheCheese(foods) {
+let i = 0
+foods = [];
+var cheese = ["cheddar", "gouda", "camembert"];
+  if (foods[i] === cheese) {
+    return "cheddar"
+  } else if (foods != cheese) {
+  return 'no cheese!'
+  }
 }
