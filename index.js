@@ -5,11 +5,12 @@ function dwarfRollCall(dwarves) {
   }
   return  call.join(" ")
   dwarves = ["Dopey", "Grumpy", "Bashful"];
-  for (var i = 0; i < dwarves.length; i++) {
+  for (i = 0; i < dwarves.length; i++) {
   dwarves.push((i+1) + ". " + dwarves[i])
   }
   return 
 }
+// I don't know why my result is being rejected. I have the exact result expected.
 
 function summonCaptainPlanet(planeteerCalls) {
   for (var i = 0; i < planeteerCalls.length; i++) {
@@ -19,7 +20,7 @@ function summonCaptainPlanet(planeteerCalls) {
 }
 
 function longPlaneteerCalls(words) {
-  for (var i = 0; i < words.length; i++) {
+  while (i < words.length) {
     var n = words[i].length
     if (n > 4) {
       return "true"
@@ -28,6 +29,8 @@ function longPlaneteerCalls(words) {
     }
   }
 }
+// I know that my function is assessing the length of the first element of the index, but I don't believe that it is continuing to assess down the line. How can I change my FOR loop to properly search this? 
+// Or is my function so far from what was expected? Am I supposed to set up a function to check shortCalls vs longCalls?
 
 function findTheCheese(foods) {
 let i = 0
@@ -39,3 +42,4 @@ var cheese = ["cheddar", "gouda", "camembert"];
   return 'no cheese!'
   }
 }
+// "no cheese!" works just fine. Need to find a way to have a foods[i] match one of the cheeses. Could set === "cheddar", but that's cheap.
