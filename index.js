@@ -22,13 +22,15 @@ function summonCaptainPlanet(planeteerCalls) {
 
 words = ["earth", "wind", "fire", "water", "heart"]
 var i = 0
+words = ["wind", "fire", "water", "heart"]
+i = 0
 function longPlaneteerCalls(words) {
   for (i = 0; i < words.length; i++) {
     var n = words[i].length
     if (n > 4) {
-      return "true"
+      return true
     } else {
-    return "false"
+    return false
     }
   }
 }
